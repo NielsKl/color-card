@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animated color cards</title>
+  <script>
+if (location.pathname.match(/fullcpgrid/i)) {
+  document.documentElement.classList.add('grid-view');
+  setTimeout(() => {
+   document.querySelector('.block.y').classList.add('fake-hover');  
+  }, 1750);
+  setTimeout(() => {
+   document.querySelector('.block.y').dispatchEvent(new Event('click'));  
+  }, 2250);
+}
+</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+    Created by <br> <a href="https://nielsklement.net"> Niels K.</a>
+    
+  <div class="block-wrap">
+  <div class="block-col">
+    <div class="block block--transition r">
+      <div class="block-content">
+        <div class="block-content__header">
+          <h2 class="block-content__header__text">Red</h2>
+        </div>
+        <p class="block-content__body">Red is the color at the end of the visible spectrum of light, next to orange and opposite violet. It has a dominant wavelength of approximately 625–740 nm.</p>
+        <div class="block-content__button">
+          Neato
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block-col">
+    <div class="block block--transition  b">
+      <div class="block-content">
+        <div class="block-content__header">
+          <h2 class="block-content__header__text">Blue</h2>
+        </div>
+        <p class="block-content__body">Blue is one of the three primary colours of pigments in painting and traditional colour theory, as well as in the RGB colour model. It lies between violet and green on the spectrum of visible light.</p>
+        <div class="block-content__button">
+          Very Cool
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block-col">
+    <div class="block block--transition y">
+      <div class="block-content">
+        <div class="block-content__header">
+          <h2 class="block-content__header__text">Yellow</h2>
+        </div>
+        <p class="block-content__body">Yellow is the color between orange and green on the spectrum of visible light. It is evoked by light with a dominant wavelength of roughly 570–590 nm. It is a primary color in subtractive color systems.</p>
+        <div class="block-content__button">
+          Yikes this one's low contrast
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

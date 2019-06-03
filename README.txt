@@ -1,0 +1,1 @@
+Fun lil' animation with vanilla js
